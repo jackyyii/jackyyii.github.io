@@ -1,8 +1,109 @@
-body {
-    padding-top: 3.5rem;
+html {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    margin: 3rem;
+.fas{
+    color: #5193b3;
+}
+.main {
+    display: grid;
+    grid-template-columns: 30% auto;
     justify-content: center;
+    align-content: center;
+}
+
+#navbar {
+    background-color: #f8d49b;
+    padding: 10%;
+    padding-top: 20%;
+    text-align: right;
+}
+
+#nav-pic {
+    width: 50%;
+    padding-bottom: 50%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+#nav-pic img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#navbar h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul {
+    margin-top: 30%;
+    list-style: none;
+}
+
+#navbar a {
+    color: #5193b3;
+    font-weight: bold;
+}
+
+#content {
+    background-color: #5193b3;
+    padding: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 calc(100% - 1em);
+    margin: 1em 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 30em) { 
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 60em) { 
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-img {
+    height: 5em;
+    text-align: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 1em 2em;
 }
