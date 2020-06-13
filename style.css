@@ -1,12 +1,35 @@
+/* #ece6cd
+#f9ac67
+#3a3f58
+#ee6a59 */
+
 html, body {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
 }
 
-.fas{
+.fas {
     color: #3a3f58;
 }
+
+#fix-home {
+    position: fixed;
+    background-color: #ee6a59;
+    color: #ece6cd;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	left: 60px;
+	border-radius:50px;
+    text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+#my-float {
+    margin-top: 22px; 
+}
+
 .main {
     display: grid;
     grid-template-columns: 30% auto;
@@ -98,42 +121,48 @@ html, body {
     margin: 1em 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border: 0.3rem solid #3a3f58;
+    border-top: 0.5rem solid #3a3f58;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
+
 .card-img {
-    padding: 1rem;
-    height: 10em;
-    text-align: center;
-    border-bottom: 0.3rem solid #3a3f58;
+    height: 10rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .card-img img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Add some padding inside the card container */
 .card-container {
     background-color: #3a3f58;
     color: #fff;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
+    height: 10rem;
 }
 
-@media screen and (min-width: 30em) { 
+@media screen and (min-width: 992px) { 
     .card {
         flex: 0 1 calc(50% - 1em);
     }
 }
 
-@media screen and (min-width: 60em) { 
+@media screen and (min-width: 1200px) { 
+    .card {
+        flex: 0 1 calc(33.3% - 1em);
+    }
+}
+
+@media screen and (min-width: 1600px) { 
     .card {
         flex: 0 1 calc(25% - 1em);
     }
