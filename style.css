@@ -2,6 +2,7 @@
 #f9ac67
 #ee6a59
 #3a3f58 */
+
 * {
     box-sizing: border-box;
 }
@@ -32,19 +33,6 @@ html, body {
 #home-button i {
     color: #ece6cd;
 }
-
-/* #login-button {
-    position: fixed;
-    padding: 1rem;
-    background-color: #ee6a59;
-	width: 7rem;
-	height: 3rem;
-	top: 30px;
-	right: 40px;
-	border-radius:5px;
-    text-align:center;
-	box-shadow: 2px 2px 3px #999;
-} */
 
 #login-button {
     padding: 1rem;
@@ -118,14 +106,14 @@ html, body {
 
 #content {
     background-color: #ece6cd;
-    padding: 3rem;
+    padding: 0 3rem 10rem 3rem;
 }
 
 #content h1 {
     color: #3a3f58;
     font-size: 3rem;
     text-shadow: 2px 2px rgb(0,0,0,0.2);
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .cards {
@@ -171,6 +159,12 @@ html, body {
     padding: 1rem 2rem;
 }
 
+@media screen and (min-width: 400px) { 
+    .card {
+        flex: 0 1 calc(100% - 1em);
+    }
+}
+
 @media screen and (min-width: 800px) { 
     .card {
         flex: 0 1 calc(50% - 1em);
@@ -213,4 +207,46 @@ html, body {
 
 #mockup-form input[type=submit]:hover {
   background-color: #2a2d42;
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 380px auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #navbar {
+        padding: 10%;
+        text-align: left;
+        border-right: none;
+    }
+
+    #navbar ul {
+        text-align: right;
+        margin-top: 20%;
+    }
+
+    #navbar li {
+        display: inline-block;
+        font-size: 0.8rem;
+        letter-spacing: -1px;
+        padding: 0 0.5rem;
+    }
+
+    #navbar a:hover {
+        font-size: 0.8rem;
+        color: #3a3f58;
+        font-weight: bold;
+    }
+
+    #home-button {
+        padding: 0.4rem 0;
+        width: 2rem;
+        height: 2rem;
+        left: 0;
+        border-radius: 0;
+    }
 }
