@@ -213,7 +213,7 @@ html, body {
     .main {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 380px auto;
+        grid-template-rows: auto auto;
         justify-content: center;
         align-content: center;
     }
