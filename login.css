@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a3f58;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    padding: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 60%;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #ece6cd;
+    color: #ee6a59;
+    text-align: center;
+    box-shadow: 0 8px 8px #111;
+}
+
+.main h1 {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.login {
+    padding: 5rem;
+    text-align: left;
+}
+
+.login label {
+    font-size: 25px;
+}
+
+.login input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.login input[type=submit] {
+    background-color: #ee6a59;
+    color: #ece6cd;
+    font-size: 20px;
+}
+
+.login a {
+    color: #3a3f58;
+    font-size: 20px;
+}

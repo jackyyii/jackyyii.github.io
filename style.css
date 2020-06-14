@@ -12,16 +12,16 @@ html, body {
     margin: 0;
 }
 
-.fas {
+.fa {
     color: #3a3f58;
 }
 
-#fix-home {
+#home-button {
     position: fixed;
+    padding: 1.3rem 0;
     background-color: #ee6a59;
-    color: #ece6cd;
-	width: 60px;
-	height: 60px;
+	width: 4rem;
+	height: 4rem;
 	bottom: 40px;
 	left: 60px;
 	border-radius:50px;
@@ -29,8 +29,26 @@ html, body {
 	box-shadow: 2px 2px 3px #999;
 }
 
-#my-float {
-    margin-top: 22px; 
+#home-button i {
+    color: #ece6cd;
+}
+
+#login-button {
+    position: fixed;
+    padding: 1rem;
+    background-color: #ee6a59;
+	width: 7rem;
+	height: 3rem;
+	top: 30px;
+	right: 40px;
+	border-radius:5px;
+    text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+#login-button i, a {
+    color: #ece6cd;
+    text-decoration: none;
 }
 
 .main {
@@ -114,6 +132,7 @@ html, body {
 .card {
     flex: 0 1 calc(100% - 1em);
     margin: 1em .5rem;
+    height: 20rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-top: 0.5rem solid #3a3f58;
