@@ -9,13 +9,13 @@ body {
 
 .wrapper {
     display: flex;
-    padding: 10rem;
+    padding: 5%;
     justify-content: center;
     align-items: center;
 }
 
 .main {
-    width: 1000px;
+    width: 500px;
     padding: 1rem;
     background-color: #ece6cd;
     color: #ee6a59;
@@ -24,17 +24,17 @@ body {
 }
 
 .main h1 {
-    font-size: 5rem;
+    font-size: 35px;
     margin-bottom: 0;
 }
 
 .login {
-    padding: 5rem;
+    padding: 5%;
     text-align: left;
 }
 
 .login label {
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 .login input {
@@ -42,15 +42,34 @@ body {
     padding: 1rem;
     margin-bottom: 2rem;
     border: 0;
+    font-size: 10px;
 }
 
 .login input[type=submit] {
     background-color: #ee6a59;
     color: #ece6cd;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .login a {
     color: #3a3f58;
     font-size: 1rem;
+}
+
+@media screen and (min-width: 1200px) { 
+    .main h1 {
+        font-size: 40px;
+    }
+    
+    .login label {
+        font-size: 20px;
+    }
+    
+    .login input {
+        font-size: 10px;
+    }
+    
+    .login input[type=submit] {
+        font-size: 10px;
+    }
 }

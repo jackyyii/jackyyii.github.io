@@ -129,6 +129,7 @@ html, body {
 }
 
 .cards {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
 }
@@ -140,9 +141,9 @@ html, body {
 .card {
     flex: 0 1 calc(100% - 1em);
     margin: 1em .5rem;
-    height: 20rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    background-color: #3a3f58;
     border-top: 0.5rem solid #3a3f58;
 }
 
@@ -150,7 +151,6 @@ html, body {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
-
 
 .card-img {
     height: 10rem;
@@ -169,22 +169,21 @@ html, body {
     background-color: #3a3f58;
     color: #fff;
     padding: 1rem 2rem;
-    height: 10rem;
 }
 
-@media screen and (min-width: 1024px) { 
+@media screen and (min-width: 800px) { 
     .card {
         flex: 0 1 calc(50% - 1em);
     }
 }
 
-@media screen and (min-width: 1600px) { 
+@media screen and (min-width: 1000px) { 
     .card {
         flex: 0 1 calc(33.3% - 1em);
     }
 }
 
-@media screen and (min-width: 1920px) { 
+@media screen and (min-width: 1200px) { 
     .card {
         flex: 0 1 calc(25% - 1em);
     }
