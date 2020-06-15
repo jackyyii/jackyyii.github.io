@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weekly Report</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
+
+            header{
+                background-color: yellow;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 50px;
+            }
+
+            article{
+                color: black;
+                border: 5px solid yellow;
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+            }
+
+            h1{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>Final Project Write-up</header>
+        <article>
+            <p>This project consists of 2 old school 90's themed games that I've created for the past few weeks. The first game, Air Hockey, is inspired by an old school game where 2 strikers constantly try to hit the puck and try their best to keep it within the play space. The second game, Space Blaster, is inspired by another old school game where users can shoot down aliens with their aircraft. Instead of shooting moving aliens etc, it will be shooting of randomly appearing targets.</p>
+            
+            <h1>Air Hockey</h1>
+            
+            <p>First thing was to create everything that is required using the Raphael library, which are the 2 strikers (rectangles) and the puck (circle). There is the computer striker, that is set to follow the puck's y position at all times, which means the computer will never lose, so the user must be able to withstand the computer's "attack" as long as possible. Then there is the striker that the user controls after clicking on the rectangle (striker).</p>
+
+            <p>Upon clicking the user striker, game starts where the puck starts to move using the setInterval function like in previous homework. Then at every move, the code checks when the puck reaches the user end, does the user striker receive or miss the puck. This is done so by checking whether the puck's y position. When the user striker misses the puck, the game ends where scores are updated, the strikers and the puck are reset to its original position, and the user is alerted his or her score. As the user striker hits the puck, the score (text) is recorded accordingly at the top right of the play space.</p>
+
+            <p>To jazz up the game, I added sound to when the puck hits the border and the striker, and when the game ends. Also, to make the game more difficult, the puck is set to increase its speed after every hit. In addition to that, user can choose the difficulty where by it affects the speed increment accordingly (in the easy setting, speed increase slower than that of the difficult setting) and the score will be adjusted accordingly whereby the harder the difficulty the higher the score for every hit.</p>
+
+            <h1>Space Blaster</h1>
+
+            <p>First thing was to create everything that is required using the Raphael library, which are the plane/aircraft (image) and the targets (circles). When the user clicks start game, the game starts by getting the number as typed in the textbox and setting the number of targets to that. If an incorrect type of data is received, e.g. the user typed in 'ten' instead of '10', the game detects it and prompts the user to type in the number in its numeric form (float type is default to round up to the nearest integer).</p>
+
+            <p>Next, with the number of targets, the targets will appear randomly and the user will aim to control the aircraft (by moving the mouse and the aircraft follows) to shoot (by clicking) the red target (changes accordingly) as fast as possible in the blue play area. The reason for the play area is to increase the difficulty of the game, whereby users cannot simply click on the target and the bullet shoots which will result in 100% accuracy. To ensure visibility, I added <1 opacity to the targets in case of overlapping ones.</p>
+
+            <p>Looking into the details, when the aircraft shoots the bullet, a setInterval function is used on a new bullet which is set to move towards the right periodically. And at every time the bullet moves, it checks whether it hits the red target by checking its y position when the bullet's x position reaches that of the red target. If the red target is hit, the target disappears, and the next targets turns red as the new target. And to jazz up the game, sounds have been added to when the targets are hit.</p>
+
+            <p>For both games, there is a button to return to home screen so you can access the other games easily.</p>
+        </article>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+html, body {  /* Select and size the outermost elements so other elements can be set in % */
+	height:100%;
+}
+
+body {
+  font-family: 'Poppins', cursive;
+  background-color: azure;
+  overflow: scroll;
+} 
+
+#main {  /* select element with id="main" */ 
+  height: 80%;
+  display: flex;
+  flex-flow: row;
+}
+
+#main > col1 {
+  order: 1;
+  flex: 15%;
+  margin: 5px;
+  padding: 5px;
+  background: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main > col2 {
+  order: 2;
+  flex: 15%;
+  margin: 5px;
+  padding: 5px;
+  background: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.para {
+  font-size: 12px;
+  padding: 5px;
+}
+
+#error {
+  font-size: 12px;
+  padding: 5px;
+  color: red;
+}
+
+#main > #mainDiv {
+  order: 3;
+  flex: 70%;
+  margin: 5px;
+}
+
+header {  /* select all header elements */
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  min-height: 10%;
+  background: coral;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+}
+
+footer {  /* select all footer elements */
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  min-height: 5%;
+  background: coral;
+  text-align: left;
+  font-size: 10px;
+  line-height: 50%;
+}
+
+  /* Changes layout under these conditions : Too narrow to support three columns */
+  /* "at-rules" using the '@' sign is an "advanced" feature */ 
+  @media all and (max-width: 640px) {
+};
+

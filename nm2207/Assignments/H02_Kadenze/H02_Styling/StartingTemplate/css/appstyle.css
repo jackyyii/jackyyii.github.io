@@ -1,0 +1,26 @@
+body, html {
+	height: 100%;
+	background-color: BurlyWood; /* background color */
+}
+
+h1, h3{
+	text-align: center; /* center the headers */
+}
+
+.story{
+	color: DarkRed; /* font color */
+}
+
+.quotation{
+	background-color: DarkOliveGreen; /* background color */
+	color: Khaki; /* font color */
+	width: 60%; /* box width */
+	padding: 2px; /* box inner padding */
+	border-style: double; /* border style */
+	border-color: DarkRed; /* border color */
+	margin: auto; /* center the box on the page */
+}
+
+.image{
+	text-align: center; /* center the image */
+}

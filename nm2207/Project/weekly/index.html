@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weekly Report</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins');
+
+            header{
+                background-color: yellow;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                font-family: 'Abril Fatface', cursive;
+                font-size: 50px;
+            }
+
+            article{
+                color: black;
+                border: 5px solid yellow;
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+            }
+
+            h1{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>Weekly Report</header>
+        <article>
+            <h1>Week 9</h1>
+            <p>My current idea is to do up a series of games, which each calculates a score on your reaction time, memory, etc.
+            I'm thinking to only allow the users to play the game one by one before calculating the final score, which they can reset and start all over. However there is another possibility that I can display all games on the screen at the same time, which the final score updates accordingly. Everything then can be reset when the reset button is clicked.</p>
+
+            <li>Game Idea 1: Air hockey where the user controls one of the sides and see how long can the user withstand the computer opponent's attack.</li>
+
+            <li>Game Idea 2: Memory game where the user try to complete a game of flipping open pictures to match 2 of the same kind.</li>
+
+            <p>I began testing out the Air Hockey concept whereby I created 2 rectangles and a circle. The circle is like the previous homework that we've did. It bounces off when it hits the rim of the box. One of the rectangle, I named it as the computer rectangle, its center y will follow the center y of the circle. So the computer rectangle actually will "hit" the circle every time without fail. Next, I'll try to add the part when the user rectangle does not receive the circle, the game will stop and the score is recorded. I plan to use the if-else statement whereby if when the circle reaches the end (x = pWidth, etc.) and the circle does not reach the range of the user rectangle (y < or > rectangle's edge), the game stops.</p>
+
+            <p>One problem I face though is that the circle (aka. disk) exceeds the lower edge of the box while it does not for the other 3 edges. I can manually adjust the bounce but then I wish to keep hardcoding as my last resort and find out the reason why first.</p>
+
+            <p>Some extra things is that I also explored changing the fonts using webfonts from Google to make the website more pleasing to the eyes. I also am figuring out how to shift around the flex boxes to create a new layout.</p>
+        </article>
+
+        <article>
+            <h1>Week 10</h1>
+            <p>Continuing on the air hockey idea, I decided to add on a little more details such as adding a highest score section which updates every time a player end his game, and also a background image which depicts a hockey rink. I also added music when the disk hits the wall and the rectangle respectively. I also make the speed of the disk go faster every interval so it will be more challenging.</p>
+
+            <p>However, I'm trying out a new game where I feel that is more challenging as it also involved arrays (hopefully)  and another moving element. The idea I have is a traditional shooting game whereby the player control a plane which shoots at incoming targets. I tried it out with the idea of my air hockey game but I am finding trouble with making the bullet hit the approaching targets properly.</p>
+
+            <p>I tried creating an array of 50 targets (circles) first that is hidden to the right of the box at random height (ypos). Then when the game starts, setinterval will make the targets shift to the left, approaching the plane (similar idea to moving the disk in the air hockey game) but so far to no avail.</p>
+        </article>
+
+        <article>
+            <h1>Week 11</h1>
+            <p>This week I am trying to make the second game work. I'm still figuring out how do I make the targets (circles) move at a constant speed, one after another. My plan was to initialise the targets as object, which they each consists atrributes, "target", the Raphael circle, "rate", the rate where the target moves, "topY" and "bottomY", the top and bottom Y value of the target, and also "targetMove", the function whereby it makes the target move (using setInterval).
+            However, I'm still struggling to make the targets move properly. One problem was that the target moves at increasing speed as next few targets start moving. Another problem is that the first target does not go all the way. And the last problem is mainly just errors here and there (e.g. target is not defined)</p>
+
+            <p>I now manage to get things printing correctly (console.log to see how the code is running) but the targets are not moving now so I'm still working on it. Since there is still some time, I will keep trying to make the targets work but in the worst case scenario, I'll maybe use the idea where the targets appear momentarily at different locations, so that I don't have to deal about the target ever changing X value.</p>
+        </article>
+
+        <article>
+            <h1>Week 12</h1>
+            <p>This week is a week of a big changes whereby I change up the space blaster game. Instead of moving targets, I made the targets to appear randomly where the number of targets is based on the user's input value, or the default value of 10. I also introduced the play area where by is a blue box that users can control the plane only when the mouse is in that area to create difficulty. I also added audio to when the plane hits the target and also when the game ends.</p>
+
+            <p>I ensured to check the input of the user. For instance, if a user typed in something that is non numeric, an error statement will be displayed to remind the user to type a numeric number. Float number will be automatically rounded down. And also, I added <1 opacity to the targets in case of overlapping ones. On an side note, I learnt how to check for NaN or undefined objects and also instead of using the while loop, I made use of the for loop to make the code cleaner.</p>
+
+            <p>I also started to clean up my code and started to comment on the code too. For the next 2 weeks I'll continue to do so and also see if I can improve the game further :)</p>
+        </article>
+    </body>
+</html>

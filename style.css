@@ -183,6 +183,14 @@ html, body {
     }
 }
 
+#link {
+    color: #4d588a;
+}
+
+#link:hover {
+    color: #3a3f58;
+}
+
 #mockup-form label {
     color: #3a3f58;
 }

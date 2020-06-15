@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/shooting.js" src="jslibs/require.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Righteous" rel="stylesheet">
+
+        <title>SPACE BLASTER</title>
+    </head>
+
+  <body>
+    <header>Space Blaster</header>
+    <div id='main'>
+        <col1>
+            Instructions
+            <div class="para">Your aim is to shoot the red target as fast as possible.</div>
+            <div class="para">Type in the number of targets you want and choose if you want to see all the target position by using the check box.</div>
+            <div class="para">Control your aircraft by keeping your mouse within the blue box!</div>
+            <div class="para">Click on start button to start the game.</div>
+            <br>
+            <a href="index.html" class="link"><img src="resources/home.png" width="40px" height="40px"></a><br>
+        </col1>
+        
+        <col2>
+            Number of Targets:
+            <input id="userValue" type="text" value=10>
+            <div class="para"><input type="checkbox" id="showTarget"> Show Targets?</div>
+            <input type="button" id="startButton" value="Start">
+            <div class="para" id="error"></div>
+            <br>
+            Score:
+            <div class="para" id="score"></div>
+        </col2>
+        
+        <div id="mainDiv">
+        </div>
+    </div>
+    <footer>
+            Credits:
+            <p>Done by Neo Jack Yi (A0146714E)</p>
+            <p>From Tutorial Group 1</p>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,101 @@
+html, body {
+	height:100%;
+	width:100%;
+}
+
+body {
+   font: 24px Helvetica;
+   /* Background image */
+   background-image: url("https://media.gettyimages.com/vectors/vector-seamless-bright-tropical-paradise-pattern-vector-id514264522?b=1&k=6&m=514264522&s=612x612&w=0&h=UYaQBYALv6kS7oftvmNmkbpgcSSFf-hVCvQrE9v8qO8=");
+  }
+
+  #main {
+   min-height: 70%;
+   max-height: 70%;
+   margin: 0px;
+   padding: 0px;
+   display:  flex;
+   flex-flow: row;
+   }
+ 
+  #main > article {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+   border-radius: 15px; /* Rounded border  */
+   background: #dddd88;
+   flex: 3 1 50%;
+   order: 2;
+   overflow: scroll;
+   }
+  
+  #main > nav {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 15px; /* Rounded border  */
+   background: #ccccff;
+           flex: 1 6 15%;
+           order: 1;
+   text-align: center;
+   }
+  
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 15px; /* Rounded border  */
+   /* Background image set on repeat */
+   background-image: url("https://littleyellowbirdwallpaper.co.uk/wp-content/uploads/12390-100x100.jpg");
+   background-repeat: repeat
+           flex: 1 6 15%;
+           order: 3;
+   text-align: center;
+   }
+ 
+  header {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 10%;
+   border: 1px solid #eebb55;
+   border-radius: 15px; /* Rounded border  */
+   background: #ffeebb;
+   }
+
+  footer {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 10%;
+   border: 1px solid #eebb55;
+   border-radius: 15px; /* Rounded border  */
+   /* Linear gradient background */
+   background-image: linear-gradient(to right, orange, yellow, green);
+   }
+
+   /* Class for paragraphs */
+   .paragraph {
+    font-size: 10px; /* Set font size 10  */
+   }
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    flex-flow: column;
+    flex-direction: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  
+
+

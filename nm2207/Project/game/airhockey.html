@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/airhockey.js" src="jslibs/require.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Poppins|Righteous" rel="stylesheet">
+
+        <title>AIR HOCKEY</title>
+    </head>
+
+  <body>
+    <header>Air Hockey</header>
+    <div id='main'>
+        <col1>
+            Instructions:
+            <div class="para">Your aim is to keep the ball within the box as long as possible.</div>
+            <div class="para">Choose the difficulty you want (it affects how fast the puck speed up) and control your striker by keeping your mouse within the box!</div>
+            <div class="para">Click on the green rectangle on the right to start the game.</div>
+            <br>
+            <a href="index.html" class="link"><img src="resources/home.png" width="40px" height="40px"></a><br>
+        </col1>
+        
+        <col2>
+            Speed:
+            <div class="para"><input type="radio" name="difficulty" id="easy" checked>Easy</div>
+            <div class="para"><input type="radio" name="difficulty" id="medium">Medium</div>
+            <div class="para"><input type="radio" name="difficulty" id="hard">Hard</div>
+            <br>
+            Score:
+            <div class="para" id="score"></div>
+        </col2>
+        
+        <div id="mainDiv">
+        </div>
+    </div>
+    <footer>
+            Credits:
+            <p>Done by Neo Jack Yi (A0146714E)</p>
+            <p>From Tutorial Group 1</p>
+    </footer>
+  </body>
+</html>
+

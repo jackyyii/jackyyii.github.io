@@ -1,0 +1,61 @@
+html, body {  /* Select and size the outermost elements so other elements can be set in % */
+	height:100%;
+}
+
+body {
+  font-family: 'Poppins', cursive;
+  background-color: azure;
+  overflow: scroll;
+} 
+
+#main {
+  margin: 5px;
+  padding: 10px;
+  padding-bottom: 50px;
+  background: yellow;
+  text-align: center;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link {
+  font-size: 15px;
+  text-align: center;
+}
+
+#home {
+  font-size: 12px;
+}
+
+header {  /* select all header elements */
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  min-height: 10%;
+  background: coral;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Righteous', cursive;
+}
+
+footer {  /* select all footer elements */
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  min-height: 5%;
+  background: coral;
+  text-align: left;
+  font-size: 10px;
+  line-height: 50%;
+}
+
+  /* Changes layout under these conditions : Too narrow to support three columns */
+  /* "at-rules" using the '@' sign is an "advanced" feature */ 
+  @media all and (max-width: 640px) {
+};
+
