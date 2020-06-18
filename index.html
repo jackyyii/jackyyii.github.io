@@ -3,252 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e1f8bc9f67.js" crossorigin="anonymous"></script>
     <title>Jack Yi's Portfolio</title>
 </head>
-<body>
-    <!-- <a id="fix-home" href="#"><i class="fa fa-home" id="home-float"></i></a> -->
-    <div id="home-button"><a href="#"><i class="fa fa-home"></i></a></div>
-    <div id="login-button"><a href="login.html"><i class="fa fa-sign-in-alt"></i> Login</a></div>
-    <div class="main">
-        <div id="navbar">
-            <div id="nav-pic">
-                <img src="media/pp.jpg">
-            </div>
-            <h1><ins>Neo</ins> Jack Yi</h1>
-            <p><i class="fa fa-envelope"></i> Email: jackyineo@gmail.com</p>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#project">Design Projects</a></li>
-                <li><a href="#about">About Me</a></li>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="d-inline-block" width="auto" height="50" src="../media/logo.png"></a>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#main-header">Home</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="login.html">Login <span class="fa fa-sign-in-alt"></span></a>
+                </li>
             </ul>
         </div>
-        <div id="content">
-            <div id="intro">
-                <h1>Hello World!</h1>
-                <p>My name is Jack Yi but you guys can call me Jack. I'm a business analytics graduate turned aspiring web developer and this is 
-                    my first ever static website created from what I've learnt so far. The purpose of this website is not only to apply what I've learned
-                    so far, but to also showcase my graphic design works. Just to note, this website is also responsive to different screen sizes so do 
-                    check it out! Enjoy browsing :)</p>
-                <p>I've also previously created a very simple website that documents my project (a simple game done using HTML, CSS and JavaScript) and other 
-                    assignments that I've done for a module that I took during my last year of university. <a id="link" href="nm2207/index.html">Click here</a> 
-                    for the links to my game and other assignments!</p>
-                
-            </div>
-            <div id="project">
-                <h1>Design Projects</h1>
-                <p>Here are my graphic design projects I've done throughout my university days.</p>
-                <div class="cards">
+    </nav>
+    <div id="main-header">
+        <div class="video-header">
+            <video src="../media/header.mp4" poster="../media/header.jpg" autoplay muted loop>Your browser does not support the video tag.</video>
+        </div>
+        <div class="header-overlay">
+            <h1>Hello World</h1>
+            <p class="intro">
+                I'm Jack Yi, but you can call me Jack.<br>
+                I'm a business analytics graduate turned<br>
+                aspiring web developer,
+            </p>
+            <p class="welcome">& welcome to my website</p>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div id="project"></div>
+    <div class="container">
+        <h2>School Project</h2>
+        <p>
+            Pardon the poor styling of this project's home page as this was the first introductory module that I have took in my last year of university as an unrestricted elective. 
+            In this module, we learned the basics of HTML, CSS, and JavaScript, where we apply it in challenges and homeworks every week, and also in our final project where we are tasked to build games.
+            This website documents my journey for the module, from week 1, all the way to week 10. Out of all, I want to bring your attention to the final project where you can try out 2 of the games that I've created. Disclaimer: It's a pretty basic game!
+        </p>
+        <a href="../nm2207/index.html" class="btn" target="blank">Project's Homepage >>></a>
+    </div>
+
+    <div id="works"></div>
+    <div class="container">
+        <h2>Graphic Design Works</h2>
+        <p>
+            Other than studying, I've been involved in graphic design due to my role in my dance club community, which led to more project opportunities such as designing for external dance events.
+            <blockquote>Fun fact: I started learning how to use photoshop to design thumbnails for my YouTube videos!</blockquote>
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/banner.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>NUS Funk Banner</h3>
-                            <p>The 2 silhouettes reflect the essence of the main dance genres in funk</p>
+                        <img class="card-img-top" src="../media/banner.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">NUS Funk Banner</h5>
+                            <p class="card-text">The 2 silhouettes reflect the essence of the main dance genres in funk</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/bfd.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>BFD Tee Shirt</h3>
-                            <p>A camp tee design for our dance camp across 3 dance CCAs. The triangles represents the 3 clubs: Breakinus, Funkstyles and DHoppers</p>
+                        <img class="card-img-top" src="../media/bfd.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">BFD Tee Shirt</h5>
+                            <p class="card-text">A camp tee design for our dance camp across 3 dance CCAs. The triangles represents the 3 clubs: Breakinus, Funkstyles and DHoppers</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/cap.jpg">
+                        <img class="card-img-top" src="../media/cap.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Club Cap</h5>
+                            <p class="card-text">First time designing on a cap for our yearly souvenir for our club members</p>
                         </div>
-                        <div class="card-container">
-                            <h3>Club Cap</h3>
-                            <p>First time designing on a cap for our yearly souvenir for our club members</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/greenwave.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Greenwave Challenge</h5>
+                        <p class="card-text">Part of a poster for a poster design contest regarding environmental care and awareness</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/ktfa.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Keep the Funk Alive</h5>
+                        <p class="card-text">Combined striking colours and retro fonts to represent the 70s for a funk event</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/lockdown.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Lockdown 2018</h5>
+                        <p class="card-text">Used disco balls to represent the dance floor where we all get down to the funky sound for the 10th anniversary of the dance event</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/lockin.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Lockin'</h5>
+                        <p class="card-text">Using Lego as my inspiration, I designed this Lockin' t-shirt for our senioe locking showcase</p>
+                    </div> 
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/maoyi.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Dance Your Heart Out</h5>
+                            <p class="card-text">A personal t-shirt project that depicts a love story that sprouted from dance and funk</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/greenwave.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Greenwave Challenge</h3>
-                            <p>Part of a poster for a poster design contest regarding environmental care and awareness</p>
+                        <img class="card-img-top" src="../media/phogh.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Pop Hard or Go Home</h5>
+                            <p class="card-text">My first ever long sleeve tee design which showcased a flashy design on the left sleeve</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/ktfa.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Keep the Funk Alive</h3>
-                            <p>Combined striking colours and retro fonts to represent the 70s for a funk event</p>
+                        <img class="card-img-top" src="../media/seoufy.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Seoulfy</h5>
+                            <p class="card-text">Designed for an online Korean beauty business, where I came up with 3 designs to best represents the beauty products in Korea</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/lockdown.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Lockdown 2018</h3>
-                            <p>Used disco balls to represent the dance floor where we all get down to the funky sound for the 10th anniversary of the dance event</p>
+                        <img class="card-img-top" src="../media/soultrain.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Soul Train</h5>
+                            <p class="card-text">Using the classic afro hair in funk as steam emitting from the soul train</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/lockin.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Lockin'</h3>
-                            <p>Using Lego as my inspiration, I designed this Lockin' t-shirt for our senioe locking showcase</p>
+                        <img class="card-img-top" src="../media/stickers.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Funk Stickers</h5>
+                            <p class="card-text">Created stickers as at token of appreciation for our club members</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/maoyi.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Dance Your Heart Out</h3>
-                            <p>A personal t-shirt project that depicts a love story that sprouted from dance and funk</p>
+                        <img class="card-img-top" src="../media/tee.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Keep The Funk Alive Tee</h5>
+                            <p class="card-text">Probably one of my favourite designs out of all where I combined different fonts to form the design</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/phogh.jpg">
+                        <img class="card-img-top" src="../media/tee2.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">F.U.N.K</h5>
+                            <p class="card-text">Using stripes to represent funk, which is a key element that is commonly found in funk outfits</p>
                         </div>
-                        <div class="card-container">
-                            <h3>Pop Hard or Go Home</h3>
-                            <p>My first ever long sleeve tee design which showcased a flashy design on the left sleeve</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../media/traffic.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Traffic Jam</h5>
+                            <p class="card-text">Using cars / vans and even car plates to reflect the event: "Traffic Jam"</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/seoufy.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Seoulfy</h3>
-                            <p>Designed for an online Korean beauty business, where I came up with 3 designs to best represents the beauty products in Korea</p>
+                        <img class="card-img-top" src="../media/xinminbanner.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Homecoming Banner</h5>
+                            <p class="card-text">Used a chinese calligraphy font for a more oriental design for my dad's primary school homecoming event</p>
                         </div> 
                     </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="media/soultrain.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Soul Train</h3>
-                            <p>Using the classic afro hair in funk as steam emitting from the soul train</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/stickers.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Funk Stickers</h3>
-                            <p>Created stickers as merchandises to represent our club</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/tee.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Keep The Funk Alive Tee</h3>
-                            <p>Probably one of my favourite designs out of all where I combined different fonts to form the design</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/tee2.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>F.U.N.K</h3>
-                            <p>Using stripes to represent funk, which is a key element that is commonly found in funk outfits</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/traffic.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Traffic Jam</h3>
-                            <p>Using cars / vans and even car plates to reflect the event: "Traffic Jam"</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/xinminbanner.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Homecoming Banner</h3>
-                            <p>Used a chinese calligraphy font for a more oriental design for my dad's primary school homecoming event</p>
-                        </div> 
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="media/xinminticket.jpg">
-                        </div>
-                        <div class="card-container">
-                            <h3>Homecoming Ticket</h3>
-                            <p>Also ventured into personalising an entry ticket for my dad's primary school homecoming event</p>
+                        <img class="card-img-top" src="../media/xinminticket.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Homecoming Ticket</h5>
+                            <p class="card-text">Also ventured into personalising an entry ticket for my dad's primary school homecoming event</p>
                         </div> 
                     </div>
                 </div>
             </div>
-            <div id="about">
-                <h1>About Me</h1>
-                <p>Just a little back story on why I chose to change my career path.</p>
-                <p>
-                    I am a business analytics graduate from National University of Singapore (NUS).
-                    Business analytics is a degree offered by School of Computing which thus provided me
-                    with exposure to coding languages such as Java, R, and mainly Python. During university, I was also the Publicity Head
-                    for my dance club which my main responsibility was to design publicity materials
-                    and merchandises for our club.
-                </p>
-                <p>
-                    I was first exposed to designing when I was learning how to edit videos and thumbnails for my YouTube
-                    channel back in my teenage days. During those years, I learnt how to use Adobe Photoshop and Premiere Pro from the internet. 
-                    Since then design has always been just a hobby. Even when applied for the role
-                    as a Publicity Head, designing was still something that I've never thought would be a possible career path to take.
-                </p>
-                <p>Therefore, I was mainly focusing on my business analyst degree till I learnt about front-end development and web design
-                    from my colleagues during internship in my third year of uni. That's when I thought: <blockquote>"Could this be something that I can pursue as a career?".</blockquote> 
-                    Hence I took up an introductory module on front-end development
-                    during my last year of uni and I must say I absolutely enjoyed the module and did well for it. You can view my assignments and my final project, where we
-                    had to create a game, <a id="link" href="nm2207/index.html">here</a>!
-                </p>
-                <p>Fast forward to graduation, I followed the
-                    natural course of taking up an offer for a business analytics graduate program. 
-                    However throughout my program, I could not stop thinking about doing web development as my career instead and how it would possibly be 
-                    something that I would want to do for the rest of my life. So here I am, taking the leap of faith to work towards web development / design.
-                </p>
-                <h1>Mock Up Form</h1>
-            </div>
-            <div id="mockup-form">
-                <form>
-                    <label>First Name</label>
-                    <input type="text" placeholder="First Name">
-
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Last Name">
-                    
-                    <label>Country</label>
-                    <select id="country" name="country">
-                    <option value="singapore">Singapore</option>
-                    <option value="canada">Canada</option>
-                    <option value="others">Others</option>
-                    </select>
-
-                    <label>Email</label>
-                    <input type="email" placeholder="Email">
-
-                    <label>Feedback</label>
-                    <textarea placeholder="Your feedback here"></textarea>
-
-                    <input type="submit">
-                </form>
-            </div>
         </div>
-    </div>   
+    </div>
+
+    <div id="about"></div>
+    <div class="container">
+        <h2>About Me</h2>
+        <img class="profile-pic" src="media/pp.jpg">
+        <p>Just a little back story on why I chose to change my career path.</p>
+        <p>
+            I am a business analytics graduate from National University of Singapore (NUS).
+            Business analytics is a degree offered by School of Computing which thus provided me
+            with exposure to coding languages such as Java, R, and mainly Python. During university, I was also the Publicity Head
+            for my dance club which my main responsibility was to design publicity materials
+            and merchandises for our club.
+        </p>
+        <p>
+            I was first exposed to designing when I was learning how to edit videos and thumbnails for my YouTube
+            channel back in my teenage days. During those years, I learnt how to use Adobe Photoshop and Premiere Pro from the internet. 
+            Since then design has always been just a hobby. Even when applied for the role
+            as a Publicity Head, designing was still something that I've never thought would be a possible career path to take.
+        </p>
+        <p>Therefore, I was mainly focusing on my business analyst degree till I learnt about front-end development and web design
+            from my colleagues during internship in my third year of uni. That's when I thought: <blockquote>"Could this be something that I can pursue as a career?".</blockquote> 
+            Hence I took up an introductory module on front-end development
+            during my last year of uni and I must say I absolutely enjoyed the module. In case you missed the link to my project, click <a id="link" href="nm2207/index.html">here</a>!
+        </p>
+        <p>Fast forward to graduation, I followed the
+            natural course of taking up an offer for a business analytics graduate program. 
+            However throughout my program, I could not stop thinking about doing web development as my career instead and how it would possibly be 
+            something that I would want to do for the rest of my life. So here I am, taking the leap of faith to work towards web development/design.
+        </p>
+        <p>
+            I must be very honest that I just started off and hence do not have as much knowledge as people that have already studied this in univeristy, 
+            but you know what? An exchange student once told me during a chit chat session, that is never too late to persue what you want, and if you know what you want to do,
+            be brave and go for it. And yes, I am now commited to learn and master front-end development, and maybe back-end development or UIUX? We shall see as learning progresses! 
+        </p>
+        <p>
+            Cheers,<br>
+            Jack Yi <a href="http://www.linkedin.com/in/jack-yi-neo-3b11ab112" target="blank"><span class="fab fa-linkedin"></span></a>
+        </p>
+    </div>
+
+    <div id="contact"></div>
+    <div class="container">
+        <h2>Contact Me (Mock Up)</h2>
+        <p>Whoops! Sorry, this form is just a mock up for practice purposes. Please email me at <strong>jackyineo@gmail.com</strong> instead.</p>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputName">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputMessage">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" rows="4"></textarea>
+            </div>
+            <label class="mr-2">Choose 1:</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">3</label>
+              </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck">
+                <label class="form-check-label" for="exampleCheck">Check me out</label>
+            </div>
+            <button type="submit" class="btn mt-3" disabled>Submit</button>
+        </form>
+    </div>
 </body>
 </html>
