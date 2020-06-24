@@ -1,0 +1,99 @@
+.form-main {
+    margin-bottom: 0 auto;
+    width: 90%;
+    padding: 3rem;
+    margin: auto;
+    max-width: 1200px;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+@media(min-width:962px) {
+    .form-main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+.form-main img{
+    width: 50%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+label {
+    color: #fd9d08;
+
+}
+
+form input[type=text], select, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+
+/* form input[type=range], input[type=radio], input[type=checkbox] {
+    background-color: tomato;
+} */
+
+input[type=range], input[type=radio], input[type=checkbox] {
+    margin: 1rem 0 2rem 0;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: #fd9d08;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 2rem;
+  height: 2rem;
+  background: #fd9d08;
+  cursor: pointer;
+}
+
+.radio label{
+    color: #000;
+    padding-right: 2rem;
+}
+
+.checkbox label{
+    color: #000;
+    padding-right: 2rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type=submit] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+    border: 0;
+    background-color: #fd9d08;
+    color: #fff;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #e48900;
+}
