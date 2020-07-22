@@ -24,11 +24,9 @@ h2 {
     border-left: 0.5rem solid #a3543d;
 }
 
-.logo {
-    height: auto;
+#logo {
+    height: 50px;
     width: auto;
-    max-height: 72px;
-    max-width: 250px;
 }
 
 .navbar {
