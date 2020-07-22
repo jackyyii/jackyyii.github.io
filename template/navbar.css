@@ -1,0 +1,62 @@
+:root {
+    --nav-bg-color: hsl(0, 0%, 20%);
+    --nav-text-color: hsl(0, 0%, 80%);
+    --nav-text-color-emphasis: white;
+    --nav-bg-contrast: hsl(0, 0%, 30%);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topnav {
+    --topnav-height: 64px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg-color);
+    height: var(--topnav-height);
+    box-shadow: var(--box-shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#topnav a {
+    color: var(--nav-text-color);
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topnav a:focus,
+#topnav a:hover {
+    color: var(--nav-text-color-emphasis);
+}

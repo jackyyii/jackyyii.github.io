@@ -1,0 +1,204 @@
+:root {
+    --topnav-bg-color: hsl(0, 0%, 20%);
+    --topnav-text-color: hsl(0, 0%, 80%);
+    --topnav-text-color-emphasis: white;
+    --topnav-bg-contrast: hsl(0, 0%, 30%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topnav {
+    --topnav-height: 64px;
+    position: fixed;
+    height: var(--topnav-height);
+    background-color: hsl(0, 0%, 20%);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#topnav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#topnav a {
+    color: var(--topnav-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topnav a:focus,
+#topnav a:hover {
+    color: var(--topnav-text-color-emphasis);
+}
+
+#topnav .logo {
+    background-color: var(--topnav-text-color-emphasis);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5em;
+}
+
+#topnav .menu-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    background-color: var(--topnav-text-color);
+}
+
+#topnav .menu-toggle:focus .icon-bar,
+#topnav .menu-toggle:hover .icon-bar {
+    background-color: var(--topnav-text-color-emphasis);
+}
+
+#topnav.opened .menu-toggle .icon-bar:first-child,
+#topnav.opened .menu-toggle .icon-bar:last-child {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#topnav.opened .menu-toggle .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#topnav.opened .menu-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#topnav.opened .menu-toggle .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+#topnav .nav-menu {
+    position: fixed;
+    top: var(--topnav-height);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#topnav.opened .nav-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+#topnav .nav-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--topnav-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#topnav .nav-link {
+    margin: 0.4em;
+    width: 100%;
+}
+
+#topnav .nav-link a {    
+    width: 100%;
+    font-weight: 400;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
+}
+
+#topnav .nav-link a:focus,
+#topnav .nav-link a:hover {
+    background-color: var(--topnav-bg-contrast);
+}
+
+#topnav.opened .nav-links {
+    padding: 1em;
+    max-height: none;
+}
+
+@media screen and (min-width: 700px) {
+    #topnav .menu-toggle {
+        display: none;
+    }
+    
+    #topnav .nav-menu,
+    #topnav.opened .nav-menu {
+        all: unset;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #topnav .nav-links,
+    #topnav.opened .nav-links {
+        all: unset;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0;
+    }
+
+    #topnav .nav-link:last-child {
+        margin-right: 0;
+    }
+}
